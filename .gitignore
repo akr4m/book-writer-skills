@@ -1,0 +1,12 @@
+# Local eval workspace and session notes
+book-writer-workspace/
+.remember/
+
+# OS / Python
+.DS_Store
+__pycache__/
+*.pyc
+
+# Built archives
+*.zip
+*.skill

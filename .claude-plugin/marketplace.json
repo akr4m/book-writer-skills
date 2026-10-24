@@ -1,0 +1,15 @@
+{
+  "name": "book-writer-skills",
+  "owner": {
+    "name": "akr4m"
+  },
+  "description": "Professional book writing and editing skills for Bengali and English",
+  "plugins": [
+    {
+      "name": "book-writer",
+      "source": ".",
+      "description": "Write, rewrite, edit and proofread books in Bengali or English to publication standard, with a manuscript checker",
+      "skills": ["./skills/book-writer"]
+    }
+  ]
+}

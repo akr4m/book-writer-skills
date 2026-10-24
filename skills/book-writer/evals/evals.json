@@ -1,0 +1,69 @@
+{
+  "skill_name": "book-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "আমাদের ইবুক প্ল্যাটফর্মের Mystery ক্যাটাগরির জন্য একটা মৌলিক ছোটগল্প লিখে দাও, মোটামুটি ২০০০ থেকে ২৫০০ শব্দ। প্রেক্ষাপট সিলেটের একটা পুরোনো চা-বাগানের ম্যানেজার বাংলো, ভরা বর্ষা। ম্যানেজারের ঘর থেকে বাগানের পুরোনো একটা হিসাবের খাতা উধাও, আর সেই রাতেই বাগানের বুড়ো চৌকিদার নিখোঁজ। প্রধান চরিত্র তৃষা, ঢাকার এক তরুণ সাংবাদিক, ছুটিতে মামার কাছে বেড়াতে এসেছে (মামা বাগানের ম্যানেজার)। third person-এ লেখো। শেষে রহস্যের সমাধান চাই, কিন্তু সেটা যেন যুক্তিসংগত হয়, হঠাৎ করে আকাশ থেকে পড়া না। গল্পটা একটা markdown ফাইলে সেভ করো।",
+      "expected_output": "An original Bengali mystery short story (~2000-2500 words) in a markdown file: standard cholit Bengali, third person, Trisha as protagonist, Sylhet tea-garden bungalow in monsoon, both the missing ledger and missing watchman resolved through clues planted earlier; no em dashes, Bengali digits and danda, no preface or notes inside the file.",
+      "files": [],
+      "expectations": [
+        "Manuscript saved as a markdown file",
+        "No em dash or dash look-alikes",
+        "No সাধু forms in চলিত narration",
+        "No non-standard ঈ spellings (বাড়ী, তৈরী, খুশী …)",
+        "At most one stock/AI cliché phrase",
+        "Length 1,800-2,750 words (2,000-2,500 requested, ±10%)",
+        "Sentences end with দাঁড়ি, no English full stops after Bengali words",
+        "Bengali digits only in prose",
+        "Consistent spelling variants (no করল/করলো-style mixing)",
+        "Contrast template (শুধু X নয়, বরং Y) used at most once",
+        "File contains only the story (title + prose): no preface, notes or summary",
+        "Third-person narration with তৃষা as protagonist, in a Sylhet tea-garden manager's bungalow during monsoon",
+        "Both mysteries (missing ledger and missing watchman) are resolved by the end",
+        "Fair play: the clue(s) the solution depends on appear on the page before the reveal"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "আমার উপন্যাসের দ্বিতীয় অধ্যায়ের একটা অংশ chapter2_draft.md ফাইলে আছে। পড়তে কেমন যেন AI-এর লেখার মতো লাগছে। এটাকে আরও natural আর human-written করে দাও, কিন্তু ঘটনা, তথ্য বা অর্থ কিছু বদলাবে না, নতুন কিছুও যোগ করবে না। আমার শুধু ঠিক করা লেখাটা দরকার, আলাদা ফাইলে সেভ করে দিও।",
+      "expected_output": "A line-edited version saved to a new file: every event, fact and name preserved (Rafiq, Rajshahi station, three years away, father's death last winter during an office audit, mother sold the mango orchard last year, unread letter, mother's grey hair, the two dialogue lines); no new characters/events; em dashes, sadhu forms, non-standard spellings, clichés and contrast templates removed; not longer than the original; no commentary inside the file.",
+      "files": [
+        "evals/files/chapter2_draft.md"
+      ],
+      "expectations": [
+        "Manuscript saved as a markdown file",
+        "No em dash or dash look-alikes",
+        "No সাধু forms in চলিত narration",
+        "No non-standard ঈ spellings (বাড়ী, তৈরী, খুশী …)",
+        "At most one stock/AI cliché phrase",
+        "Saved to a new file and the original draft is unchanged",
+        "'শুধু X নয়, বরং Y' contrast templates removed",
+        "Not padded: at most 110% of the original's word count",
+        "Key facts still present (names, places, timeline, both dialogue lines)",
+        "Chapter heading 'দুই' kept",
+        "No new characters, events, facts or anecdotes added",
+        "Emotional meaning and registers preserved (Rafiq's guilt, mother's terse তুই-form reply, honorific narration of mother)",
+        "File contains only the edited passage, no commentary"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I'm putting together an English-language personal finance book for fresh graduates in Bangladesh who just landed their first job (think someone in Dhaka earning around 25-40k taka a month, maybe sending some money home to family). Can you write the opening chapter, around 1,500 words? Warm but not preachy, practical, no lecturing. Save it as a markdown file.",
+      "expected_output": "An opening chapter (~1500 words) in English prose saved as markdown: grounded in Bangladeshi first-job reality, illustrative numbers framed as examples, no fabricated statistics or citations, no em dashes, none of the stock AI phrases, prose-led rather than bullet lists, no preachy imperatives, any editorial notes outside the manuscript.",
+      "files": [],
+      "expectations": [
+        "Manuscript saved as a markdown file",
+        "Length 1,275-1,725 words (~1,500 requested, ±15%)",
+        "No em dash or look-alikes (– -- ―)",
+        "None of the stock AI phrases on the checker's English list",
+        "Contrast template ('not just X but Y', 'it's not X, it's Y') at most once",
+        "Prose-led: list items under 15% of lines and at most 4 headings",
+        "Pressure phrasing ('you must', 'starting today', 'remember,') at most twice",
+        "No fabricated statistics, studies or citations (any specific statistic is sourced, or there are none)",
+        "Taka examples are framed as illustrations and fit a 25-40k monthly salary",
+        "File contains only the chapter; any editorial notes are outside it",
+        "Opens with something concrete (a scene or situation), not a generic statement"
+      ]
+    }
+  ]
+}
